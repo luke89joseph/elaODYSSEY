@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slaughter of the Suitors</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="backgroundRed">
+    <div
+      id="header"
+      style="
+        font-family: Lexend Deca;
+        font-weight: 700;
+        padding: 40px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 150px;
+      "
+      class="backgroundBrown"
+    >
+      <h1>SLAUGHTER OF THE SUITORS</h1>
+      <h3 class="montserrat" style="text-align: center" id="button1">HOP IN</h3>
+    </div>
+    <img src="images/headerIMG.jpg" style="width: 100%; height: auto" />
+    <div class="backgroundRed montserrat">
+      <h3 style="padding: 30px; margin: 0; text-align: center">
+        The slaughter of the suitors is a climatic moment in The Odyssey, where
+        Odysseus, disguised as a beggar, finally reveals his identity and brings
+        vengeance upon the suitors. With the help of his son Telemachus, loyal
+        servants, and Athena, Odysseus locks the suitors in the great hall.
+        Armed with his bow, he begins by killing their leader, Antinous,
+        shooting him in the throat, and then systematically slaughters the rest
+        in a brutal and decisive battle. The suitors are unarmed and
+        overwhelmed, as Telemachus and the servants provide weapons to Odysseus
+        and guard against escape. After the battle, Odysseus ensures loyalty in
+        his household by sparing the faithful and punishing the traitorous
+        servants. This act restores order and justice to Ithaca, marking the
+        hero’s triumphant reclaiming of his home.
+      </h3>
+    </div>
+  </body>
+  <script>
+    document.getElementById("button1").onclick = function () {
+      if (
+        navigator.userAgent.indexOf("android") === -1 &&
+        (navigator.userAgent.indexOf("iPad") === -1) &
+          (navigator.userAgent.indexOf("iPhone") === -1)
+      ) {
+        window.location.href = "onboard.html";
+      } else {
+        document.getElementById("button1").innerHTML =
+          "-= ERROR: MOBILE DEVICES NOT SUPPORTED =-";
+      }
+    };
+  </script>
+</html>
