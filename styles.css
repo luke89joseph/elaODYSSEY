@@ -36,4 +36,5 @@ img {
 .backgroundRed {
   color: white;
   background-color: rgb(10, 104, 26);
+  top: 0;
 }
